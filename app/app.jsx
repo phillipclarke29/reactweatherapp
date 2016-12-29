@@ -5,10 +5,10 @@ var Main = require('Main');
 var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
-
+import { hashHistory } from 'react-router'
 
   ReactDOM.render(
-  <Router history={hasHistory}>
+  <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="about" component={About}/>
       <Route path="Examples" component={Examples}/>

@@ -10,7 +10,6 @@ var Weather = React.createClass({
   },
   handleSearch: function(location){
     var that = this;
-    debugger;
     this.setState({isLoading: true});
     openWeatherApp.getTemp(location).then(function (temp){
       that.setState({
@@ -30,7 +29,6 @@ var Weather = React.createClass({
     var temp = this.state.temp;
     var location = this.state.location;
     var isLoading = this.state.isLoading;
-
     function renderMessage(){
       if (isLoading == true){
         return <h3>Fetching Weather ...</h3>;
