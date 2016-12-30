@@ -12,7 +12,7 @@ $(document).foundation();
 import { hashHistory } from 'react-router'
 
 //load css
-require('style!css!applicationStyles')
+require('style!css!sass!applicationStyles')
 
   ReactDOM.render(
   <Router history={hashHistory}>
